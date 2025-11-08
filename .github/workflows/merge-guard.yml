@@ -1,0 +1,20 @@
+name: Merge Guard – Direct Push Check
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  direct-push-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail if push not via PR or unauthorized actor
+        run: |
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            # Only allow certain actors/bots to push directly
+            ALLOWED="github-actions[bot] ReleaseBotUsername"
+            if [[ ! "${ALLOWED}" =~ "${{ github.actor }}" ]]; then
+              echo "❌ Direct pushes to main/master are restricted."
+              exit 1
+            fi
+          fi
