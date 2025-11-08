@@ -51,6 +51,7 @@ class AboutUs : BaseActivity() {
                     "${tvReadingText?.text}"
             AppUtils.shareText(this@AboutUs, sharingText)
         }*/
+
         loadGif()
         backgroundThread.execute {
             if (AppUtils.isTodayUpdated("about_us")){
