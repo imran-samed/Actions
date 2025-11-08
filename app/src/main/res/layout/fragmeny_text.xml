@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightGrey"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingTop="@dimen/_4sdp"
+    android:paddingEnd="@dimen/_16sdp">
+
+    <LinearLayout
+        android:id="@+id/llReadingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tvReadingTitle"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/ivReadingShare"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Jn 15: 16-20"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/ivFullScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fullscreen"
+            app:tint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/ivFontToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_font_icon_red" />
+
+        <ImageView
+            android:id="@+id/ivReadingShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_baseline_share_24"
+            app:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llReadingTitle"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:overScrollMode="never">
+
+        <TextView
+            android:id="@+id/tvReadableText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:scrollbars="vertical"
+            tools:text="@string/dummy_text_max_length"
+            android:textColor="@color/textGrey" />
+
+
+    </ScrollView>
+</RelativeLayout>

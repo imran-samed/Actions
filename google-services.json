@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "952135109995",
+    "firebase_url": "https://god-sword.firebaseio.com",
+    "project_id": "god-sword",
+    "storage_bucket": "god-sword.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952135109995:android:8ba5028c870bd61dd1d02e",
+        "android_client_info": {
+          "package_name": "com.stpauls.dailyliturgy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4mUbtBbwHI5K1moDQo4nHH895De0oCvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952135109995:android:d9afae3affaa80a4d1d02e",
+        "android_client_info": {
+          "package_name": "com.stpauls.godsword"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4mUbtBbwHI5K1moDQo4nHH895De0oCvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

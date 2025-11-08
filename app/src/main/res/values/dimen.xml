@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="shapeRoundPadding">16dp</dimen>
+    <dimen name="tvPreNextDatePaddingLR">@dimen/_12sdp</dimen>
+    <dimen name="tvPreNextDatePaddingTB">@dimen/_4sdp</dimen>
+    <dimen name="arcSize">@dimen/_120sdp</dimen>
+    <dimen name="dotColor">@dimen/_8sdp</dimen>
+    <dimen name="readingIconSize">@dimen/_72sdp</dimen>
+</resources>

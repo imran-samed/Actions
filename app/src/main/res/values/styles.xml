@@ -1,0 +1,84 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/new_font</item>
+    </style>
+
+    <style name="FullScreenAppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/new_font</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="SplashTheme" parent="FullScreenAppTheme">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="RoundImage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="AppFontStyle" parent="TextAppearance.AppCompat">
+        <!--<item name="android:letterSpacing">0.05</item>
+        <item name="android:lineSpacingExtra">1dp</item>-->
+        <item name="fontFamily">@font/new_font</item>
+        <item name="android:fontFamily">@font/new_font</item>
+        <item name="font">@font/new_font</item>
+    </style>
+
+    <style name="NormalReadingFont" parent="AppFontStyle">
+        <item name="android:textSize">@dimen/_15ssp</item>
+    </style>
+
+    <style name="MediumReadingFont" parent="AppFontStyle">
+        <item name="android:textSize">@dimen/_17ssp</item>
+    </style>
+
+    <style name="LargeReadingFont" parent="AppFontStyle">
+        <item name="android:textSize">@dimen/_20ssp</item>
+    </style>
+
+    <style name="PreNextDate" parent="TextAppearance.AppCompat">
+        <item name="android:paddingTop">@dimen/tvPreNextDatePaddingTB</item>
+        <item name="android:paddingBottom">@dimen/tvPreNextDatePaddingTB</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_previous_next</item>
+    </style>
+
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="ProgressBarStyle" parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ProgressBarStyleInColorPrimary" parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="BibleDiaryMainTextViews" parent="TextAppearance.AppCompat.Subhead">
+        <!--<item name="android:textSize">@dimen/_14ssp</item>-->
+    </style>
+
+    <style name="MyTabStyle">
+        <item name="textAllCaps">false</item>
+        <item name="paddingStart">@dimen/_4sdp</item>
+        <item name="paddingEnd">@dimen/_4sdp</item>
+        <item name="font">@font/roboto</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+</resources>

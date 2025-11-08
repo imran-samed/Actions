@@ -1,0 +1,60 @@
+<resources>
+    <string name="header_of_day">16th week in ordinary time</string>
+    <string name="header_of_day2">St. Thomas the Apostle</string>
+    <string name="title"><b>Title</b>\n%1$s</string>
+    <string name="today_psalter">Psalter Week 1</string>
+    <string name="today_color">Red,Green</string>
+    <string name="dummy_text">Bible Diary App, first of its kind, is produced jointly by the Claretian Publications and the Indian Bible Foundation with the mission of enabling you to pray as you go.  We hope you will enjoy the Liturgical Scriptural readings, succinct and thought-provoking reflections, daily prayers, rosary, way of the cross, etc in your spiritual voyage. There are provisions for you to jot down your musings and inspirations, your resolutions, little dialogue with God…We welcome suggestions, content, and ideas towards making this spiritual resource a better instrument to serve God and humanity on a continuous basis.</string>
+    <string name="dummy_text_max_length">The standard Lorem Ipsum passage, used since the 1500s
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+
+1914 translation by H. Rackham
+"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</string>
+
+
+    <string name="facebook_app_id">350650599434402</string>
+    <string name="share_intent_title">Share reading…</string>
+    <string name="share_whatsapp_not_instaled">WhatsApp is not installed on your device</string>
+    <string name="available_app">Available on : <b>Android | iOS</b></string>
+    <string name="click_here_to_download"><u>Click here to download app…</u></string>
+    <string name="click_here_to_open"><u>Click here to open...</u></string>
+    <string name="msg_copy_right">Daily Liturgy is property of St Paul\'s\nCopyright &#169; 2020-21 by St Paul\'s\nAll Rights Reserved.</string>
+
+
+    <string name="about_us"><b>SOCIETY OF ST PAUL</b>\n\n
+The Society of Saint Paul is a religious Congregation founded by Blessed James Alberione in
+1914 at Alba, Italy. It is the first branch of the Pauline Family that consists of five religious
+congregations (Society of St Paul, Daughters of St Paul, Pious Disciples of the Divine Master,
+Sisters of Jesus the Good Shepherd, Sisters of Mary Queen of Apostles), four Institutes (Institute
+of our Lady of Annunciation, Institute of St Gabriel the Archangel, Institute of the Holy Family,
+Institute of Jesus the Priest) and the Association of Pauline Cooperators.\n\n
+It was in the night that divided the 19th century from the 20th that James Alberione, a young
+seminarian, received a particular light to do something for the people of the new century. He felt
+obliged to serve the Church and to work with others in an organised way.\n\n
+The Society of St Paul was born with the specific charism to spread Christian message and
+values through the means of communication. The progress of time saw the transition from
+Apostolate of the Press to Publishing Apostolate, and then to the apostolate using all the latest
+and fastest means of communication. This progress underlines the conviction of the Founder to
+communicate to the people to today with the means of today.\n\n\n
+
+        <b>ST PAULS BIBLICAL CENTRE</b>\n\n
+<b><i>“The Bible is life for the apostolate of the editions. It is the book we must give using all the
+    means the Lord has given us,”</i></b> says Father James Alberione, the Founder of the Pauline Family.
+(Vademecum, no. 1014).\n\n
+The creation and development of St Pauls Biblical Centre (SPBC) under the General
+Government in Rome, Italy, and establishing its branches in various Provinces and Regions of
+the Society of St Paul are aimed at strengthening of this most important area of Pauline
+Publishing.\n\n
+In India, St Pauls Biblical centre (formerly known as Alberione Good News Centre) was
+established in Bengaluru in the year 2012. And in the year 2018 it was relocated to the National
+        Capital, New Delhi, and was renamed <b>St Pauls Biblical Centre (SPBC)</b>. The Centre is engaged
+in the Apostolate of the Word of God by way of coordinating the publication of various editions
+of Bible and Biblical literature, the annual Bible Diary – Daily Liturgy, and the liturgical bulletin
+The Sunday Liturgy. The Centre plans to expand its activities by organizing Bible Courses, Bible
+Year Programmes, Celebration of the Sunday of the Word of God, Creation of Audio Bible,
+Biblical Apps, Bible Quiz, Biblical Formation through YouTube and Website, etc.</string>
+    <string name="default_notification_channel_id">Daily Liturgy</string>
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_below="@+id/rlTopView"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingRight="@dimen/_16sdp">
+
+        <ImageView
+            app:tint="@color/white"
+            android:id="@+id/ivCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_calendar" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/MediumReadingFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/ivFontToggle"
+            android:layout_toEndOf="@+id/ivCalendar"
+            android:text="Aug 25, Friday"
+            android:textColor="@color/white" />
+        <!-- This will share content with below format-->
+        <!--Date-->
+        <!--Title-->
+        <!--Body-->
+
+        <ImageView
+            android:layout_toStartOf="@+id/tvShare"
+            android:id="@+id/ivFontToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_font_icon" />
+
+
+        <ImageView
+            android:id="@+id/tvShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/ivHome"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_baseline_share_24"
+            app:tint="@color/white" />
+
+
+        <ImageView
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:id="@+id/ivHome"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_baseline_home_24"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llDates"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:layout_below="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/tvPreviousDate"
+            style="@style/PreNextDate"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_arrow_back_20"
+            android:drawableLeft="@drawable/ic_arrow_back_20"
+            android:gravity="center_vertical|start"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:text="Prev day" />
+
+        <TextView
+            android:id="@+id/tvNextDate"
+            style="@style/PreNextDate"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_weight="1"
+            android:drawableEnd="@drawable/ic_arrow_forward"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:gravity="center_vertical|end"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:text="Next day"
+            android:textAlignment="gravity" />
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/rlTopView"
+        layout="@layout/layout_top_view" />
+
+
+    <TextView
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:id="@+id/tvHomilyTitle"
+        android:layout_width="match_parent"
+        style="@style/NormalReadingFont"
+        android:textStyle="bold"
+        android:layout_below="@+id/llDates"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:scrollbars="vertical"
+        android:textColor="@color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvHomilyTitle"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:scrollbars="none">
+
+
+        <TextView
+            android:id="@+id/tvReadableText"
+            style="@style/NormalReadingFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            tools:text="@string/dummy_text_max_length" />
+
+    </ScrollView>
+
+
+</RelativeLayout>

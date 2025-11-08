@@ -1,0 +1,54 @@
+# Android/IntelliJ/Java/Kotlin/Gradle ignores
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+.idea/
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.vscode/
+.github/
+docs/
+*.log
+*.bak
+*.tmp
+*.swp
+*.swo
+*.class
+*.jar
+*.war
+*.ear
+*.apk
+*.ap_  
+*.aab
+*.keystore
+*.jks
+*.bat
+*.sh
+# Credentials and sensitive files
+credentials.txt
+credentialsIreland.txt
+gods_word_2021.jks
+ireland_gods_word_2021.jks
+# Test folders
+test/
+tests/
+androidTest/
+# Miscellaneous
+Thumbs.db
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+# Node/npm (if present)
+node_modules/
+# End of file

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@drawable/bg_white" />
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_below="@+id/rlTopView"
+        android:paddingStart="@dimen/_2sdp"
+        android:paddingLeft="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/tvPreviousDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:background="@drawable/bg_previous_next"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/tvTitleDate"
+            style="@style/MediumReadingFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/tvNextDate"
+            android:layout_toEndOf="@+id/tvPreviousDate"
+            android:background="@drawable/bg_previous_next"
+            android:gravity="center"
+            android:paddingStart="@dimen/_2sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:singleLine="true"
+            tools:text="Aug 25, Friday" />
+
+
+        <ImageView
+            android:id="@+id/tvNextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_toStartOf="@+id/tvMusic"
+            android:background="@drawable/bg_previous_next"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_previous_next"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_baseline_home_24"
+            app:tint="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/tvMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_toStartOf="@+id/ivHome"
+            android:background="@drawable/bg_previous_next"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_speaking_svgrepo_com"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlToolbar">
+
+        <LinearLayout
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_12sdp">
+
+            <TextView
+                android:id="@+id/tvHeaderOfDay"
+                style="@style/BibleDiaryMainTextViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                tools:text="@string/header_of_day" />
+
+            <TextView
+                android:id="@+id/tvHeaderOfDay2"
+                style="@style/BibleDiaryMainTextViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/app_font"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                tools:text="@string/header_of_day2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/tvPsalter"
+                    style="@style/BibleDiaryMainTextViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+                    tools:text="@string/today_psalter" />
+
+                <TextView
+                    android:id="@+id/llColors"
+                    style="@style/BibleDiaryMainTextViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvPsalter"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom|end"
+                    android:gravity="bottom|end"
+                    android:orientation="horizontal"
+                    android:textColor="@color/black"
+                    tools:text="White | Red" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvPreviousDate2"
+                    style="@style/PreNextDate"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_arrow_back_20"
+                    android:drawableLeft="@drawable/ic_arrow_back_20"
+                    android:gravity="center_vertical|start"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:text="Prev day" />
+
+                <TextView
+                    android:id="@+id/tvNextDate2"
+                    style="@style/PreNextDate"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_arrow_forward"
+                    android:drawableRight="@drawable/ic_arrow_forward"
+                    android:gravity="center_vertical|end"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_4sdp"
+                    android:paddingRight="@dimen/_4sdp"
+                    android:text="Next day"
+                    android:textAlignment="gravity" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cardView"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@color/transparent">
+
+
+            <!--android:elevation="0dp"-->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="top"
+                android:hapticFeedbackEnabled="true"
+                android:background="@color/transparent"
+                app:tabBackground="@drawable/tab_color_selector"
+                app:tabGravity="start"
+                app:tabPadding="@dimen/_4sdp"
+                app:tabIndicatorGravity="bottom"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@style/MyTabStyle"
+                app:tabTextColor="@color/colorPrimary" />
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvNoItem"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No data is available for this date"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+
+    <include
+        android:id="@+id/rlTopView"
+        layout="@layout/layout_top_view" />
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "952135109995",
+    "firebase_url": "https://god-sword.firebaseio.com",
+    "project_id": "god-sword",
+    "storage_bucket": "god-sword.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952135109995:android:8ba5028c870bd61dd1d02e",
+        "android_client_info": {
+          "package_name": "com.stpauls.dailyliturgy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952135109995-7o7rjiv5qmpoa4ik44m29a4u0bhoto1g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stpauls.dailyliturgy",
+            "certificate_hash": "b9ce49f7050cf85f9f307af63d77ccb92965e03e"
+          }
+        },
+        {
+          "client_id": "952135109995-mo60p9ombqnjpatthk22spatvom6ivqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4mUbtBbwHI5K1moDQo4nHH895De0oCvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952135109995-mo60p9ombqnjpatthk22spatvom6ivqq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "952135109995-9b13brh755j6tu0a1nc7kurenuvo8n5d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.stpauls.godsword"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952135109995:android:d9afae3affaa80a4d1d02e",
+        "android_client_info": {
+          "package_name": "com.stpauls.godsword"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952135109995-du96nhioaqpll2gj4n17n7jiio5m61g3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stpauls.godsword",
+            "certificate_hash": "b9ce49f7050cf85f9f307af63d77ccb92965e03e"
+          }
+        },
+        {
+          "client_id": "952135109995-mo60p9ombqnjpatthk22spatvom6ivqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4mUbtBbwHI5K1moDQo4nHH895De0oCvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952135109995-mo60p9ombqnjpatthk22spatvom6ivqq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "952135109995-9b13brh755j6tu0a1nc7kurenuvo8n5d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.stpauls.godsword"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

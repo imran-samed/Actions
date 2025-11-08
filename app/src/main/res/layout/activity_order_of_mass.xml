@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_below="@+id/rlTopView"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingRight="@dimen/_16sdp">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/MediumReadingFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/ivToogle"
+            android:text="Order of Mass"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_toStartOf="@+id/ivHome"
+            android:id="@+id/ivToogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_font_icon" />
+
+
+        <!--This will share app link-->
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_baseline_home_24"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <include android:id="@+id/rlTopView"
+        layout="@layout/layout_top_view"/>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_below="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_16sdp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvReadableText"
+            style="@style/NormalReadingFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:scrollbars="vertical"
+            android:textColor="@color/black" />
+
+    </ScrollView>
+
+
+</RelativeLayout>
