@@ -51,6 +51,7 @@ class AboutUs : BaseActivity() {
                     "${tvReadingText?.text}"
             AppUtils.shareText(this@AboutUs, sharingText)
         }*/
+
         loadGif()
         backgroundThread.execute {
             if (AppUtils.isTodayUpdated("about_us")){
@@ -74,9 +75,13 @@ class AboutUs : BaseActivity() {
     }
 
 
+
+
+
     private fun setAboutUs(orderOfMass: String?) {
         if (!TextUtils.isEmpty(orderOfMass) || !TextUtils.equals("--", orderOfMass)) {
             AppUtils.setHTMLString(tvReadingText, orderOfMass)
         }
+
     }
 }
