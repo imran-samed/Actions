@@ -75,6 +75,7 @@ class AboutUs : BaseActivity() {
     }
 
 
+
     private fun setAboutUs(orderOfMass: String?) {
         if (!TextUtils.isEmpty(orderOfMass) || !TextUtils.equals("--", orderOfMass)) {
             AppUtils.setHTMLString(tvReadingText, orderOfMass)
