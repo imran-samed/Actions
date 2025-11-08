@@ -1,0 +1,82 @@
+title = "Gitleaks Configuration for Android Projects"
+description = "Custom configuration to detect real secrets and ignore known safe patterns"
+
+# --- Gitleaks global options ---
+[extend]
+# If you want to start from the default config and customize, uncomment:
+# useDefault = true
+
+[allowlist]
+# Common false positives for Android projects
+description = "Allowed patterns that are known safe"
+regexes = [
+    # Android signing and Firebase configs
+    '''AIza[0-9A-Za-z\\-_]{35}''',   # Firebase API keys (public by design)
+    '''[0-9]{12}-[a-z0-9]{32}\\.apps\\.googleusercontent\\.com''',
+    '''[A-Za-z0-9\\-_]{24}\\.[A-Za-z0-9\\-_]{6}\\.[A-Za-z0-9\\-_]{27}''', # JWT tokens in tests
+    '''([a-f0-9]{32})''',  # MD5 hashes in Gradle caches
+    '''http(s)?://[a-zA-Z0-9\\-_.]+''',  # URLs
+    '''test_(key|token|secret)''',  # test data
+    '''example\\.(com|org|net)'''
+]
+
+# --- Custom rules ---
+[[rules]]
+id = "generic-api-key"
+description = "Generic API Key or Access Token"
+regex = '''(?i)(api|access|secret|auth|token|key)[=:] ?["']?[A-Za-z0-9_\-]{16,}["']?'''
+entropy = 3.8
+tags = ["key", "token", "api"]
+
+[[rules]]
+id = "aws-access-key"
+description = "AWS Access Key ID"
+regex = '''AKIA[0-9A-Z]{16}'''
+tags = ["key", "AWS"]
+
+[[rules]]
+id = "aws-secret-key"
+description = "AWS Secret Access Key"
+regex = '''(?i)aws(.{0,20})?(secret|access)?(.{0,20})?['\"][0-9a-zA-Z/+]{40}['\"]'''
+tags = ["key", "AWS"]
+
+[[rules]]
+id = "github-token"
+description = "GitHub Personal Access Token"
+regex = '''gh[pousr]_[A-Za-z0-9]{36}'''
+tags = ["key", "GitHub"]
+
+[[rules]]
+id = "slack-webhook"
+description = "Slack Webhook URL"
+regex = '''https://hooks\\.slack\\.com/services/[A-Z0-9]{9}/[A-Z0-9]{9,}/[A-Za-z0-9]{24}'''
+tags = ["key", "Slack"]
+
+[[rules]]
+id = "private-key"
+description = "Private Key block"
+regex = '''-----BEGIN (RSA|EC|DSA|OPENSSH|PGP|PRIVATE) KEY-----'''
+tags = ["key", "Private Key"]
+
+[[rules]]
+id = "firebase-private-key"
+description = "Firebase private key (from service account JSON)"
+regex = '''"private_key":\s*"-----BEGIN PRIVATE KEY-----[A-Za-z0-9\\s/+]+=*-----END PRIVATE KEY-----"'''
+tags = ["key", "Firebase"]
+
+# --- Optional tuning ---
+[whitelist]
+description = "Ignore typical Android build folders"
+paths = [
+    "build/",
+    ".gradle/",
+    "gradle/",
+    "node_modules/",
+    "test/",
+    "androidTest/",
+    "docs/",
+    "fastlane/",
+    "example/",
+    ".idea/",
+    ".github/",
+]
