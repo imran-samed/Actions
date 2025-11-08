@@ -82,5 +82,6 @@ class AboutUs : BaseActivity() {
         if (!TextUtils.isEmpty(orderOfMass) || !TextUtils.equals("--", orderOfMass)) {
             AppUtils.setHTMLString(tvReadingText, orderOfMass)
         }
+
     }
 }
